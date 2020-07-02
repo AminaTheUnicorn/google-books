@@ -29,11 +29,14 @@ function Books() {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-12">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>(React) Google Books</h1>
+              <p>Search for and Save Books of Interest</p>
             </Jumbotron>
-            <form>
+            <div class="jumbotron">
+             <form>
+              <h3>Book Search</h3>
               <Input
                 onChange={() => {}}
                 name="title"
@@ -52,8 +55,9 @@ function Books() {
                 Submit Book
               </FormBtn>
             </form>
+            </div>
           </Col>
-          <Col size="md-6 sm-12">
+          <Col size=" sm-12">
             <Jumbotron>
               <h1>Books On My List</h1>
             </Jumbotron>
